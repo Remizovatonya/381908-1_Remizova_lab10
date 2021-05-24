@@ -198,6 +198,8 @@ TMonom& TMonom::operator=(const TMonom& _v)
         for (int i = 0; i < this->data.dim; i++)
             this->data.data[i] = _v.data.data[i];
     }
+
+    return *this;
 }
 
 double& TMonom::operator[](int i)
